@@ -85,4 +85,17 @@ public class HomeController : Controller
 
         return View(users);
     }
+
+    public IActionResult OneGuy()
+    {
+        // to a View that has defined a model as @model string[]
+        User norm = new User()
+        {
+            FirstName = "Norm",
+            LastName = "MacDonald"
+        };
+
+        return View(norm);
+
+    }
 }
