@@ -41,4 +41,17 @@ public class HomeController : Controller
         };
         return View(names);
     }
+
+    public IActionResult Users()
+    {
+        // to a View that has defined a model as @model string[]
+        int[] nums = new int[]
+        {
+            3,
+            6,
+            9,
+            12
+        };
+        return View(nums);
+    }
 }
