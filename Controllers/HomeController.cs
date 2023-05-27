@@ -39,6 +39,10 @@ public class HomeController : Controller
             "Joey",
             "Moose"
         };
+
+        string bob = "Bob";
+        //return View(model:name);
+
         return View(names);
     }
 
