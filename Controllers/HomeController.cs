@@ -54,4 +54,35 @@ public class HomeController : Controller
         };
         return View(nums);
     }
+
+    public IActionResult Users()
+    {
+        // to a View that has defined a model as @model string[]
+        List<User> users = new List<User>();
+
+
+        User user1 = new User()
+        {
+            FirstName = "Karl",
+            LastName = "Pilkington"
+        };
+
+        User user2 = new User()
+        {
+            FirstName = "Ricky",
+            LastName = "Gervais"
+        };
+
+        User user3 = new User()
+        {
+            FirstName = "Stephen",
+            LastName = "Merchant"
+        };
+
+        users.Add(user1);
+        users.Add(user2);
+        users.Add(user3);
+
+        return View(users);
+    }
 }
