@@ -41,7 +41,8 @@ public class HomeController : Controller
         };
 
         string bob = "Bob";
-        //return View(model:name);
+        //return View(model:bob);
+        //return View("Names", bob
 
         return View(names);
     }
